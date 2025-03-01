@@ -58,4 +58,10 @@ View(matrix)
 gasto <-list(servicios="Publicos",lista_servicios = c("agua","luz","gas"),precio=c(10.000,55.00,200.1))
 View(gasto)
 
+#Activity 1
+#Search price of agua
+gasto$precio[which(gasto$lista_servicios=="agua")]
+
+#Use match
+gasto$precios[match("agua",gasto$lista_servicios)]
 
